@@ -26,6 +26,7 @@ while True:
     try:
         number_1 = float(input("Enter the first number: "))
         break
+    # if worng input or invalid input display error 
     except ValueError:
         print("Invalid input. Please enter a valid number.")
 
@@ -34,7 +35,9 @@ while True:
     operator = input("Enter the operator (+, -, *, /): ")
     if operator in ('+', '-', '*', '/'):
         break
+      # if worng input or invalid input display error 
     else:
+        
         print("Please enter a valid operator.")
 
 # Get user input for the second number check if the user input the valid second number and if not , handle the exception
@@ -55,7 +58,7 @@ elif operator == '*':
 elif operator == '/':
     result = divide_number(number_1, number_2)
 else:
-    result = "Error Occured ! "
+    result = "Error ! "
 
 # Display the calculated result 
 
